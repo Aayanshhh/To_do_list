@@ -1,10 +1,10 @@
 # To-Do List Application
 
-A command-line to-do list application implemented in Python, enhanced with features like task prioritization, due dates, editing, deleting tasks, and data persistence.
+A GUI-based to-do list application implemented in Python using `tkinter`. It includes features like task prioritization, due dates, editing, deleting tasks, and data persistence.
 
 ## Features
 
-- **User Interface Enhancements**: Colorful and intuitive command-line interface using `colorama`.
+- **User Interface Enhancements**: Intuitive graphical user interface using `tkinter` with styled buttons and colored elements.
 - **Task Prioritization**: Ability to set task priority (high, medium, low).
 - **Due Dates**: Set due dates for tasks and view them in the task list.
 - **Edit Tasks**: Edit existing tasks.
@@ -14,56 +14,16 @@ A command-line to-do list application implemented in Python, enhanced with featu
 
 ## Usage
 
-### Main Menu
+### Main Window
 
-The main menu provides the following options:
+The main window provides the following features:
 
-1. Add a task
-2. View tasks
-3. Complete a task
-4. Edit a task
-5. Delete a task
-6. Exit
+1. **Add Task**: Enter the task description, priority, and due date, then click "Add Task".
+2. **View Tasks**: Tasks are displayed in the list box.
+3. **Complete Task**: Double-click a task to mark it as completed.
+4. **Edit Task**: Select a task from the list, enter the new task description, and click "Edit Task".
+5. **Delete Task**: Select a task from the list and click "Delete Task".
+6. **Save Tasks**: Click "Save Tasks" to save the tasks to a JSON file.
+7. **Exit**: Click "Exit" to save tasks and close the application.
 
-### Adding a Task
 
-- You will be prompted to enter the task description.
-- You will be prompted to enter the task priority (high, medium, low).
-- You will be prompted to enter the due date (optional, in YYYY-MM-DD format).
-
-### Viewing Tasks
-
-- Displays all tasks with their status (completed/not completed), priority, and due date.
-
-### Completing a Task
-
-- You will be prompted to enter the task number to mark as completed.
-
-### Editing a Task
-
-- You will be prompted to enter the task number to edit.
-- You will be prompted to enter the new task description.
-
-### Deleting a Task
-
-- You will be prompted to enter the task number to delete.
-
-### Exiting the Application
-
-- Saves the tasks to a JSON file (`tasks.json`) and exits the application.
-
-## Example
-
-```bash
-To-Do List Menu:
-1. Add a task
-2. View tasks
-3. Complete a task
-4. Edit a task
-5. Delete a task
-6. Exit
-Choose an option: 1
-Enter a new task: Buy groceries
-Enter priority (high, medium, low): high
-Enter due date (YYYY-MM-DD) or leave blank: 2023-12-31
-Added task: 'Buy groceries' with priority 'high' and due date '2023-12-31'
